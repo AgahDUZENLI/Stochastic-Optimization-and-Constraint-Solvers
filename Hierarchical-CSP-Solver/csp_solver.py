@@ -1,5 +1,6 @@
 import math
 import csv
+import os
 
 MIN_VAL, MAX_VAL = 1, 120
 
@@ -370,7 +371,8 @@ def main():
             rows.append(row)
 
     # Write to CSV
-    filename = "results.csv"
+    script_folder = os.path.dirname(os.path.abspath(__file__))
+    filename = os.path.join(script_folder, "results.csv")
     fields = ["Problem","A","B","C","D","E","F","G","H","I","J","K","L","M","nva"]
 
     with open(filename, "w", newline="") as f:
