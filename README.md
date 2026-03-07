@@ -56,7 +56,9 @@ The program prints a formatted table to the console containing the following col
 
 * **Clipping**: All generated neighbors are clipped to the range $[-512, 512]$ to ensure the search stays within the defined problem bounds.
 
-# CSP Solver – AI HW2
+---
+
+# CSP Solver
 
 ## Description
 This program solves three hierarchically organized Constraint Satisfaction Problems (CSPs) involving variables **A through M**, each taking integer values in the domain **{1,...,120}**.
